@@ -25,6 +25,34 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+/*********************
+UTILITY STYLES
+*********************/
+section{
+	width:100%;
+	text-align: center;
+}
+.inner_wrapper{
+	display: inline-block;
+	width:100%;
+	font-size: 0;
+	.block{
+		font-size:18px;
+		display: inline-block;
+		vertical-align: top;
+		img{
+			width:100%;
+		}
+	}
+}
+.parallax{
+	height: 500px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width:100%;
+}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class

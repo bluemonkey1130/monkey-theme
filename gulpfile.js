@@ -9,9 +9,8 @@
 /*
       js/app.js        Matches the exact file
       js/*.js          Matches all files ending in .js in the js directory only
-     !js/app.js       Excludes js/app.js from the match, which is useful if you want to match all files in a directory except for a particular file
+      !js/app.js       Excludes js/app.js from the match, which is useful if you want to match all files in a directory except for a particular file
       *.+(js|css)     Matches all files in the root directory ending in .js or .css
-
 
  */
 
@@ -44,7 +43,7 @@ gulp.task('js', function() {
 
 
 /////////////////////////////////////   SASS TASKS
-gulp.task('sass', function () {
+gulp.task('sass',['sass-admin'], function () {
     return gulp.src([
             'SRC/library/scss/partials/**/*.scss',
             'SRC/library/scss/modules/**/*.scss',
@@ -131,10 +130,10 @@ gulp.task('clean-js', function(){
 
 /////////////////////////////////////  WATCH TASKS
 gulp.task('watch', ['js', 'sass', 'image','move'], function(){
-    gulp.watch('SRC/library/scss/*', ['sass' ,'sass-admin']);
+    gulp.watch('SRC/library/scss/*', ['sass']);
     gulp.watch('SRC/library/js/**/*.js', ['js']);
     gulp.watch('SRC/*', ['move']);
     gulp.watch('SRC/library/images/**/*', ['image']);
 });
 
-gulp.task('default',['sass','js','image','move','sass-admin']);
+gulp.task('default',['sass','js','image','move']);

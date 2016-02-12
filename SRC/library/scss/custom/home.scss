@@ -1,0 +1,137 @@
+.restaurant_detail{
+  // header{
+  //   background-attachment: initial;
+  //   background-repeat: no-repeat;
+  //   background-position: 50% 50%;
+  //   padding: 15vh 10% 10vh;
+  //   background-size: 100% auto;
+  //   margin-bottom: 40px;
+  // }
+  .column {
+    .inner_wrapper {
+      .block{
+
+      }
+      .left{
+        width:70%;
+        padding-right:5%;
+        min-width: 300px;
+        @media only screen and (max-width: 1000px) {
+          width:100%
+        }
+
+        .inner_wrapper {
+          .hero_text{
+            text-align: left;
+          }
+        }
+        .sub-hero{
+          img{
+            width:100%;
+          }
+        }
+        .gallery_block {
+          .block {
+            width: 50%;
+            min-width: 100px;
+            padding:11px;
+
+
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          }
+        }
+
+      }
+      .right{
+        width:30%;
+        margin-top: 6%;
+        min-width: 250px;
+        @media only screen and (max-width: 1000px) {
+          width:100%
+        }
+        .menu{
+          font-size:18px;
+          background-color: red;
+          width:100%;
+          color: $white;
+          @media only screen and (max-width: 1000px) {
+            width:100%
+          }
+          h3 {
+            color: $white;
+            padding-left: 5%;
+            border-top:1px solid $white;
+            padding-top:15px;
+            margin-top: 20px;
+            display: inline-block;
+          }
+          .inner_block {
+
+            padding:5%;
+            ul {
+              font-size: 20px;
+              list-style: none;
+            }
+            h4 {
+              margin-bottom: 2px;
+              color: $white;
+            }
+            p {
+              font-size:18px;
+              margin-top: 0px;
+            }
+            p:nth-child(4) {
+              font-size: 10px;
+            }
+          }
+        }
+        .chef_side{
+          font-size:18px;
+          padding-top: 20px;
+          padding-bottom:20px;
+          @media only screen and (max-width: 1000px) {
+            width:100%
+          }
+        }
+        h4{
+          text-align: left;
+          margin-top: 20px;
+          margin-bottom:10px;
+        }
+        .chef_side{
+          border-bottom: 1px solid $gray;
+          margin-bottom:5%;
+          img{
+            width:100%;
+          }
+          a{
+            margin-bottom: 10px;
+          }
+        }
+        .contact{
+          width:100%;
+          h4{
+            color:red;
+          }
+        }
+        #eventSocial{
+          position: relative;
+          font-family: 'Mono Social Icons Font';
+          color: #cccccc;
+          font-size: 35px;
+          left:0;
+          width: auto;
+          float: left;
+          border-left:0px solid white;
+          .symbol{
+            width:10%;
+
+          }
+        }
+      }
+    }
+  }
+}

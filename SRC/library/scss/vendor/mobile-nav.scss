@@ -1,0 +1,249 @@
+#mobile_nav {
+  display: none;
+  @media only screen and (max-width:50em) {
+    display: block;
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+    top:0px;
+  }
+  .nav {
+    position: relative;
+    width: auto;
+    display: inline-block;
+    border: none;
+  }
+  .menu-item {
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    :after {
+      content: '';
+      display:block;
+      border: 1px solid white;
+      width:10px;
+      margin-left:auto;
+      margin-right:auto;
+      margin-bottom:5px;
+      margin-top:5px;
+    }
+
+    a {
+      color: white;
+      font-weight: 700;
+      font-size:25px;
+      text-transform: uppercase;
+      position: relative;
+      text-decoration: none;
+      margin: auto;
+    }
+  }
+}
+.btn-nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  border: none;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+  z-index: 99999;
+  background-color: black;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+}
+
+.btn-nav:focus {
+  outline: 0;
+}
+
+.icon-bar {
+  display: block;
+  margin: 6px 0;
+  width: 40px;
+  height: 5px;
+  background-color: #FFFFFF;
+}
+
+.btn-nav:hover .icon-bar {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: orange;
+}
+
+.nav-content {
+  position: fixed;
+  top: -100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000;
+  display: block;
+  height: 100%;
+  z-index: 90;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  top: 15%;
+}
+
+.nav-item {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.animated {
+  display: block;
+  margin: 0 auto;
+}
+
+.animated:hover .icon-bar,
+.animated:focus .icon-bar{
+  background-color: orange;
+}
+
+.animated:focus {
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.icon-bar {
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
+  z-index: 999999;
+}
+
+.animated .icon-bar {
+  z-index: 999999;
+  background-color:orange;
+}
+
+.animated .top {
+  -webkit-transform: translateY(10px) rotateZ(45deg);
+  -moz-transform: translateY(10px) rotateZ(45deg);
+  -ms-transform: translateY(10px) rotateZ(45deg);
+  -o-transform: translateY(10px) rotateZ(45deg);
+  transform: translateY(10px) rotateZ(45deg);
+}
+
+.animated .bottom {
+  -webkit-transform: translateY(-10px) rotateZ(-45deg);
+  -moz-transform: translateY(-10px) rotateZ(-45deg);
+  -ms-transform: translateY(-10px) rotateZ(-45deg);
+  -o-transform: translateY(-10px) rotateZ(-45deg);
+  transform: translateY(-10px) rotateZ(-45deg);
+}
+
+.animated .middle {
+  width: 0;
+}
+
+@keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-moz-keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@-o-keyframes showNav {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.showNav {
+  -webkit-animation: showNav 1s ease forwards;
+  -moz-animation: showNav 1s ease forwards;
+  -o-animation: showNav 1s ease forwards;
+  animation: showNav 1s ease forwards;
+}
+
+@keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@-webkit-keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@-moz-keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@-o-keyframes hideNav {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+.hideNav {
+  -webkit-animation: hideNav 1s ease forwards;
+  -moz-animation: hideNav 1s ease forwards;
+  -o-animation: hideNav 1s ease forwards;
+  animation: hideNav 1s ease forwards;
+}
+
+.hidden {
+  display: none;
+}
+
+
